@@ -2,15 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Thank You for Your Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Successful</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
-    h1 { color: #4CAF50; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #28a745;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      font-size: 60px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .icon {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>✅ Payment Successful</h1>
-  <p>Thank you for your order! We’ve received your payment.</p>
-  <p>You’ll receive an email confirmation shortly.</p>
+  <div class="container">
+    <div class="icon">✅</div>
+    <h1>Payment Successful</h1>
+    <p>Thank you for your order! We’ve received your payment.</p>
+    <div class="footer">
+      <p>Powered by PayPal</p>
+    </div>
+  </div>
 </body>
 </html>
